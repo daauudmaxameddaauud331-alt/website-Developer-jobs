@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Crown - 5 Star Hotel Apartment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="crown-icon">👑</span>
+                <span class="logo-text">ROYAL CROWN</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">HOME</a></li>
+                <li><a href="#rooms" class="nav-link">ROOMS</a></li>
+                <li><a href="#vip" class="nav-link">VIP SUITES</a></li>
+                <li><a href="#services" class="nav-link">SERVICES</a></li>
+                <li><a href="#restaurant" class="nav-link">RESTAURANT</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Welcome to Royal Crown</h1>
+            <p class="hero-subtitle fade-in-delay">5-Star Hotel Apartment</p>
+            <p class="hero-description fade-in-delay-2">Experience true luxury, comfort, and privacy in the heart of the city</p>
+            <div class="hero-features fade-in-delay-3">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Modern Design</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Peaceful Environment</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Luxury Services</span>
+                </div>
+            </div>
+            <button class="cta-button fade-in-delay-4" onclick="scrollToSection('rooms')">EXPLORE ROOMS</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Normal Rooms Section -->
+    <section id="rooms" class="section rooms-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Rooms</h2>
+                <p class="section-subtitle">Designed for comfort and relaxation</p>
+            </div>
+            
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Standard Room">
+                        <div class="room-badge">POPULAR</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Standard Room</h3>
+                        <p class="room-price">$120 <span>per night</span></p>
+                        <ul class="room-features">
+                            <li>Private modern bathroom</li>
+                            <li>City or garden view</li>
+                            <li>King or queen-size bed</li>
+                            <li>Air conditioning</li>
+                            <li>Smart TV & Free Wi-Fi</li>
+                        </ul>
+                        <button class="book-button">BOOK NOW</button>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Deluxe Room">
+                        <div class="room-badge gold">DELUXE</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Deluxe Room</h3>
+                        <p class="room-price">$180 <span>per night</span></p>
+                        <ul class="room-features">
+                            <li>Spacious luxury bathroom</li>
+                            <li>Large windows with premium view</li>
+                            <li>King-size premium bed</li>
+                            <li>Climate control system</li>
+                            <li>Smart TV, Mini bar & Wi-Fi</li>
+                        </ul>
+                        <button class="book-button">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Rooms Section -->
+    <section id="vip" class="section vip-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gold">VIP Suites</h2>
+                <p class="section-subtitle">Excellence beyond comfort</p>
+            </div>
+
+            <div class="vip-card">
+                <div class="vip-image">
+                    <img src="/placeholder.svg?height=500&width=800" alt="Royal VIP Suite">
+                </div>
+                <div class="vip-content">
+                    <h3 class="vip-title">Royal VIP Suite</h3>
+                    <p class="vip-price">$450 <span>per night</span></p>
+                    
+                    <div class="vip-includes">
+                        <h4>Suite Features:</h4>
+                        <ul>
+                            <li>Luxury bedroom with premium furniture</li>
+                            <li>Spacious private bathroom</li>
+                            <li>Balcony with exclusive view</li>
+                            <li>Personal sitting area</li>
+                        </ul>
+                    </div>
+
+                    <div class="vip-services">
+                        <h4>Free VIP Services:</h4>
+                        <div class="services-grid">
+                            <div class="service-item">
+                                <span class="service-icon">🍽</span>
+                                <span>Free Meals (Breakfast & Dinner)</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-icon">🏊</span>
+                                <span>Free Swimming Pool</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-icon">🏋️</span>
+                                <span>Free Gym Access</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-icon">💆</span>
+                                <span>Free Massage Service</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-icon">🚗</span>
+                                <span>Free Airport Transfer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="book-button gold">RESERVE VIP SUITE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Rooms Section -->
+    <section class="section special-section">
+        <div class="container">
+            <div class="special-content">
+                <div class="special-icon">🏛</div>
+                <h2 class="special-title">Special Rooms for Important Guests</h2>
+                <p class="special-description">
+                    We provide exclusive rooms reserved only for important guests and leaders. 
+                    These rooms feature maximum privacy & security, private entrance access, 
+                    high-level room service, and dedicated staff support.
+                </p>
+                <div class="special-badge">STRICTLY LIMITED - VIP & OFFICIAL GUESTS ONLY</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Premium 5-star experience</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon-large">🍴</div>
+                    <h3>Food Ordering</h3>
+                    <p>Order any meal from our extensive menu, delivered to your room</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-large">🚗</div>
+                    <h3>Airport Pickup</h3>
+                    <p>Free airport transfer service when booking a room</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-large">🏋️</div>
+                    <h3>Fitness Center</h3>
+                    <p>Free gym access for all guests with modern equipment</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-large">📶</div>
+                    <h3>High-Speed Wi-Fi</h3>
+                    <p>Free high-speed internet throughout the hotel</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-large">🧹</div>
+                    <h3>Daily Cleaning</h3>
+                    <p>Professional housekeeping service every day</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-large">🕒</div>
+                    <h3>24/7 Support</h3>
+                    <p>Reception and security available around the clock</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section id="restaurant" class="section restaurant-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Restaurant Menu</h2>
+                <p class="section-subtitle">Delicious meals from around the world</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="breakfast">Breakfast</button>
+                <button class="menu-tab" data-category="lunch">Lunch & Dinner</button>
+                <button class="menu-tab" data-category="international">International</button>
+                <button class="menu-tab" data-category="drinks">Drinks & Desserts</button>
+            </div>
+
+            <div class="menu-content">
+                <div class="menu-grid" data-category="breakfast">
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Continental Breakfast">
+                        <div class="menu-item-content">
+                            <h4>Continental Breakfast</h4>
+                            <p>Fresh eggs, bacon, toast, fruits & juice</p>
+                            <span class="menu-price">$25</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Pancake Special">
+                        <div class="menu-item-content">
+                            <h4>Pancake Special</h4>
+                            <p>Fluffy pancakes with fresh berries & syrup</p>
+                            <span class="menu-price">$18</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Healthy Start">
+                        <div class="menu-item-content">
+                            <h4>Healthy Start</h4>
+                            <p>Avocado toast, smoked salmon & green smoothie</p>
+                            <span class="menu-price">$22</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-grid hidden" data-category="lunch">
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Grilled Steak">
+                        <div class="menu-item-content">
+                            <h4>Prime Grilled Steak</h4>
+                            <p>Tender steak with roasted vegetables</p>
+                            <span class="menu-price">$45</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Salmon Fillet">
+                        <div class="menu-item-content">
+                            <h4>Salmon Fillet</h4>
+                            <p>Fresh grilled salmon with lemon butter sauce</p>
+                            <span class="menu-price">$38</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Pasta Carbonara">
+                        <div class="menu-item-content">
+                            <h4>Pasta Carbonara</h4>
+                            <p>Classic Italian pasta with creamy sauce</p>
+                            <span class="menu-price">$28</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-grid hidden" data-category="international">
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Sushi Platter">
+                        <div class="menu-item-content">
+                            <h4>Sushi Platter</h4>
+                            <p>Assorted fresh sushi rolls & sashimi</p>
+                            <span class="menu-price">$42</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Chicken Curry">
+                        <div class="menu-item-content">
+                            <h4>Chicken Curry</h4>
+                            <p>Authentic Indian curry with rice & naan</p>
+                            <span class="menu-price">$32</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Pad Thai">
+                        <div class="menu-item-content">
+                            <h4>Pad Thai</h4>
+                            <p>Traditional Thai stir-fried noodles</p>
+                            <span class="menu-price">$26</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-grid hidden" data-category="drinks">
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Chocolate Cake">
+                        <div class="menu-item-content">
+                            <h4>Chocolate Lava Cake</h4>
+                            <p>Rich chocolate cake with vanilla ice cream</p>
+                            <span class="menu-price">$15</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Tropical Smoothie">
+                        <div class="menu-item-content">
+                            <h4>Tropical Smoothie</h4>
+                            <p>Blend of fresh tropical fruits</p>
+                            <span class="menu-price">$12</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Premium Coffee">
+                        <div class="menu-item-content">
+                            <h4>Premium Coffee</h4>
+                            <p>Espresso, cappuccino, or latte</p>
+                            <span class="menu-price">$8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Royal Crown</h2>
+                    <p>
+                        Royal Crown 5-Star Hotel Apartment is built to provide luxury living 
+                        with hotel-level services. We focus on comfort, privacy, security, 
+                        and premium guest satisfaction.
+                    </p>
+                    <p>
+                        Our mission is to deliver unforgettable hospitality for every guest 
+                        — from normal visitors to VIP leaders. We combine modern design with 
+                        traditional hospitality to create an experience that exceeds expectations.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Star Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Service</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/placeholder.svg?height=600&width=500" alt="Royal Crown Hotel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We're here to help 24/7</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@royalcrownhotel.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+252 63 0000000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Prime City Center Location</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4>Support Hours</h4>
+                            <p>24/7 Available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="crown-icon">👑</span>
+                    <span>ROYAL CROWN</span>
+                </div>
+                <p class="footer-text">Experience luxury, comfort, and world-class hospitality</p>
+                <p class="footer-copyright">&copy; 2025 Royal Crown Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
